@@ -15,6 +15,10 @@
       href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+    />
   </head>
   <body>
     <section class="header">
@@ -39,7 +43,20 @@
           Jelajahi keindahan destinasi kami dan nikmati pengalaman wisata yang
           tak terlupakan.
         </p>
-        <a href="" class="hero-btn">Untuk Info Lebih Lanjut</a>
+        <div class="new-section" id="modal-section">
+          <button class="show-modal">Untuk Informasi Lebih Lanjut</button>
+          <div class="overlay"></div>
+          <div class="modal-box">
+            <i class="fa-solid fa-info"></i>
+            <h2>Info</h2>
+            <h3>Lagi Ngetest Pop-up!</h3>
+
+            <div class="buttons">
+              <button class="close-btn">Woi</button>
+              <button>Lanjut</button>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
 
@@ -72,6 +89,90 @@
       </div>
     </section>
 
+    <div class="hero">
+      <h1>Rating</h1>
+      <div class="container">
+        <div class="testimonial">
+          <div class="slide-row" id="slide">
+            <div class="slide-col">
+              <div class="user-text">
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga,
+                  dignissimos!
+                </p>
+                <h3>Malang</h3>
+                <i class="bx bxs-star"></i>
+                <i class="bx bxs-star"></i>
+                <i class="bx bxs-star"></i>
+                <i class="bx bxs-star"></i>
+                <i class="bx bxs-star"></i>
+              </div>
+              <div class="user-img">
+                <img src="image/user1.png" alt="" />
+              </div>
+            </div>
+            <div class="slide-col">
+              <div class="user-text">
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga,
+                  dignissimos!
+                </p>
+                <h3>Jogja</h3>
+                <i class="bx bxs-star"></i>
+                <i class="bx bxs-star"></i>
+                <i class="bx bxs-star"></i>
+                <i class="bx bxs-star"></i>
+                <i class="bx bxs-star"></i>
+              </div>
+              <div class="user-img">
+                <img src="image/user1.png" alt="" />
+              </div>
+            </div>
+            <div class="slide-col">
+              <div class="user-text">
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga,
+                  dignissimos!
+                </p>
+                <h3>Jakarta</h3>
+                <i class="bx bxs-star"></i>
+                <i class="bx bxs-star"></i>
+                <i class="bx bxs-star"></i>
+                <i class="bx bxs-star"></i>
+                <i class="bx bxs-star"></i>
+              </div>
+              <div class="user-img">
+                <img src="image/user1.png" alt="" />
+              </div>
+            </div>
+            <div class="slide-col">
+              <div class="user-text">
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga,
+                  dignissimos!
+                </p>
+                <h3>Papua</h3>
+                <i class="bx bxs-star"></i>
+                <i class="bx bxs-star"></i>
+                <i class="bx bxs-star"></i>
+                <i class="bx bxs-star"></i>
+                <i class="bx bxs-star-half"></i>
+              </div>
+              <div class="user-img">
+                <img src="image/user1.png" alt="" />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="indicator">
+          <span class="btn active"></span>
+          <span class="btn"></span>
+          <span class="btn"></span>
+          <span class="btn"></span>
+        </div>
+      </div>
+    </div>
+
     <!-- Testimonials -->
 
     <section class="services" id="services">
@@ -101,48 +202,6 @@
       </div>
     </section>
 
-    <!--- Informasi --->
-    <section class="testimonials">
-      <h1>Galeri Pelanggan Sukses</h1>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam, illo?
-      </p>
-      <div class="row">
-        <div class="testimonial-col">
-          <img src="image/destination1.png" alt="" />
-          <div>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque,
-              sunt quisquam alias repudiandae molestias rerum, libero debitis
-              consectetur quasi provident minus, praesentium tempora a delectus?
-            </p>
-            <h3>Surabaya</h3>
-            <i class="bx bxs-star"></i>
-            <i class="bx bxs-star"></i>
-            <i class="bx bxs-star"></i>
-            <i class="bx bxs-star"></i>
-            <i class="bx bxs-star"></i>
-          </div>
-        </div>
-        <div class="testimonial-col">
-          <img src="image/destination1.png" alt="" />
-          <div>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque,
-              sunt quisquam alias repudiandae molestias rerum, libero debitis
-              consectetur quasi provident minus, praesentium tempora a delectus?
-            </p>
-            <h3>Jakarta</h3>
-            <i class="bx bxs-star"></i>
-            <i class="bx bxs-star"></i>
-            <i class="bx bxs-star"></i>
-            <i class="bx bxs-star"></i>
-            <i class="bx bxs-star-half"></i>
-          </div>
-        </div>
-      </div>
-    </section>
-
     <!-- About Us + Contact -->
 
     <section class="about-us" id="about-us">
@@ -168,14 +227,6 @@
     </section>
 
     <!-- Javascript -->
-    <script>
-      var navLinks = document.getElementById("navLinks");
-      function showMenu() {
-        navLinks.style.right = "0";
-      }
-      function hideMenu() {
-        navLinks.style.right = "-200px";
-      }
-    </script>
+    <script src="javascript/script.js"></script>
   </body>
 </html>
