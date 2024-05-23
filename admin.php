@@ -28,19 +28,19 @@
           </a>
         </li>
         <li>
-          <a href="manajemen/manajemen.html">
+          <a href="manajemen/manajemen.php">
             <i class="bx bx-folder"></i>
             <span>Manajemen Destinasi</span>
           </a>
         </li>
         <li>
-          <a href="manajemen/input.html">
+          <a href="manajemen/input.php">
             <i class="bx bx-notepad"></i>
             <span>Input Data</span>
           </a>
         </li>
         <li>
-          <a href="paket wisata/paket.html">
+          <a href="paket wisata/paket.php">
             <i class="bx bxs-package"></i>
             <span>Paket Wisata</span>
           </a>
